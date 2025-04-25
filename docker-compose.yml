@@ -1,0 +1,13 @@
+services:
+  go-ddd-handson-uitest:
+    container_name: go-ddd-handson-uitest
+    build: .
+    tty: true
+    volumes:
+      - ./src:/go/src  
+    networks:
+      - external
+networks:
+  external:
+    name: go-ddd-handson-net
+    external: true

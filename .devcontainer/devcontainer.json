@@ -1,0 +1,21 @@
+{
+    "name": "Go DDD Handson UI test",
+    "dockerComposeFile":[
+        "../docker-compose.yml"
+    ],
+    "service":"go-ddd-handson-uitest",
+    "workspaceFolder": "/go/src/app",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "golang.go",
+                "onsi.ginkgo"        
+            ],
+            "settings": {
+                "go.gopath": "/go" ,
+                "go.inferGopath": true ,
+                "go.useLanguageServer": true
+            }
+        }
+    }
+}
