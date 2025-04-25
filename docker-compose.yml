@@ -9,5 +9,5 @@ services:
       - external
 networks:
   external:
-    name: go-ddd-handson-net
+    name: goweb-exercise-net
     external: true
